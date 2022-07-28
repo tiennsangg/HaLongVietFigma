@@ -1,0 +1,1 @@
+$(".sub_cate_1").css("min-height", $('.nav_menu_left').height() +"px");

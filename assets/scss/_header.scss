@@ -1,0 +1,212 @@
+.div_header {
+    position: relative;
+    z-index: 10;
+    width: 90%;
+    height: 163px;
+    margin: auto;
+    .header_logo_search {
+        display: flex;
+        height: 70%;
+        .logo {
+            width: 40%;
+            height: 100%;
+            // .logo_img {
+            //     padding-top: 53.456%;
+            //     position: relative;
+            //     img {
+            //         position: absolute;
+            //         top: 0;
+            //         left: 0;
+            //         height: 100%;
+            //         width: 100%;
+            //     }
+            // }
+        }
+        .search {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .search_input {
+                width: 70%;
+                position: relative;
+                input {
+                    width: 85%;
+                    height: 50px;
+                    padding-left: 20px;
+                    padding-right: 70px;
+                    border: 1px solid #888888;
+                }
+                button {
+                    padding: 10px;
+                    border: none;
+                    background-color: white;
+                    position: absolute;
+                    right: 16%;
+                    top: 1px;
+                }
+            }
+            .my_phone {
+                width: 30%;
+                img {
+                    padding-bottom: 8px;
+                }
+                a {
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #F6A822;
+                }
+            }
+        }
+    }
+    .header_menu {
+        height: 30%;
+        display: flex;
+        align-items: center;
+        li {
+            list-style: none;
+            padding-left: 20px;
+        }
+        a {
+            color: white;
+        }
+        position: relative;
+        /* MENU LEFT */
+        .menu_left {
+            width: 25%;
+            text-transform: uppercase;
+            height: 100%;
+            padding-top: 11px;
+            position: relative;
+            img {
+                padding-bottom: 1px;
+            }
+            .nav_menu_left {
+                position: absolute;
+                top: 49px;
+                left: 0px;
+                display: none;
+                a {
+                    color: #333333;
+                }
+                ul {
+                    padding-left: 0px;
+                    width: 351px;
+                }
+                li {
+                    position: relative;
+                    padding-top: 47px;
+                    padding-bottom: 20px;
+                    background-color: #F6F6F6;
+                    img {
+                        position: absolute;
+                        right: 10px;
+                    }
+                }
+                .sub_cate_1 {
+                    position: absolute;
+                    top: 0;
+                    left: 343px;
+                    display: table;
+                    width: 130%;
+                    min-height: 100%;
+                    background: #F6F6F6;
+                    display: none;
+                    li {
+                        display: inline-grid;
+                        list-style: disc inside;
+                        width: 33.33%;
+                    }
+                }
+            }
+        }
+        /* END MENU LEFT */
+        /* XỬ LÝ HOVER MENU LEFT */
+        .menu_left:hover {
+            background-color: #333333;
+            .nav_menu_left {
+                display: block;
+            }
+        }
+        .menu_left ul li:hover {
+            background-color: white;
+        }
+        .nav_menu_left li:hover {
+            .sub_cate_1 {
+                display: table;
+            }
+        }
+        /* END HOVER MENU LEFT */
+        
+        /* MENU CENTER */
+        .menu_center {
+            width: 55%;
+            background-color: #F6A822;
+            text-transform: uppercase;
+            position: relative;
+            .nav_menu_center {
+                #ul_menu_center {
+                    display: flex;
+                    img {
+                        padding-bottom: 5px;
+                    }
+                    li {
+                        padding-right: 27px;
+                        padding-top: 12px;
+                        height: 49px;
+                    }
+                    .sub_cate_2 {
+                        position: absolute;
+                        top: 49px;
+                        margin-left: -83px;
+                        display: none;
+                        a {
+                            color: #333333;
+                        }
+                        li {
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                            padding-left: 55px;
+                            padding-right: 70px;
+                            background-color: #F6F6F6;
+                        }
+                    }
+                }
+            }
+        }
+        /* END MENU CENTER */
+
+        /* HOVER MENU CENTER */
+            #ul_menu_center li:hover {
+                a {
+                    color: #333333;
+                }
+                .sub_cate_2 {
+                    display: block !important;
+                }
+            }
+            #ul_menu_center ul li:hover {
+                background-color: white !important;
+            }
+        /* MENU RIGHT */
+        .menu_right {
+            width: 30%;
+            display: flex;
+            .signin_signup {
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                padding-left: 80px;
+                a:hover {
+                    color: #333333;
+                }
+            }
+            .cart_home {
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                border-left: 1px solid #D9D9D9;
+            }
+        }
+    }
+}
